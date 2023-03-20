@@ -28,7 +28,8 @@ def get_morgan(data, smiles, nBits=2048):
     ##Generate columns name for dataframe to store morgan fingerprint
     col_name = []
     for bits in range(1, nBits+1):
-        name = 'ECFP'+str(bits)
+        #name = 'ECFP'+str(bits)
+        name = f'ECFP{str(bits)}'
         col_name.append(name)
     #print(col_name)
     
@@ -73,7 +74,8 @@ def get_morgan_ROMol(data, ROMol, nBits=2048):
     ##Generate columns name for dataframe to store morgan fingerprint
     col_name = []
     for bits in range(1, nBits+1):
-        name = 'ECFP'+str(bits)
+        #name = 'ECFP'+str(bits)
+        name = f"ECFP{str(bits)}"
         col_name.append(name)
     #print(col_name)
     
